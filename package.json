@@ -1,0 +1,28 @@
+{
+  "name": "my2sats-poster",
+  "module": "src/cli/index.ts",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "my2sats": "./src/cli/index.ts"
+  },
+  "scripts": {
+    "start": "bun run src/cli/index.ts",
+    "store-key": "bun run src/cli/index.ts store-key",
+    "post": "bun run src/cli/index.ts post",
+    "update": "bun run src/cli/index.ts update",
+    "delete": "bun run src/cli/index.ts delete"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/prompts": "^2.4.9"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "commander": "^14.0.2",
+    "nostr-tools": "^2.19.4",
+    "prompts": "^2.4.2"
+  }
+}
